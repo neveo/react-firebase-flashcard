@@ -13,6 +13,14 @@ class App extends Component {
       cards: [
         {id: 1, eng: "English", han: "Hanzi", pin: "Pinyin"},
         {id: 2, eng: "English_2", han: "Hanzi_2", pin: "Pinyin_2"},
+        {id: 3, eng: "English_3", han: "Hanzi_3", pin: "Pinyin_3"},
+        {id: 4, eng: "English_4", han: "Hanzi_4", pin: "Pinyin_4"},
+        {id: 5, eng: "English_5", han: "Hanzi_5", pin: "Pinyin_5"},
+        {id: 6, eng: "English_6", han: "Hanzi_6", pin: "Pinyin_6"},
+        {id: 7, eng: "English_7", han: "Hanzi_7", pin: "Pinyin_7"},
+        {id: 8, eng: "English_8", han: "Hanzi_8", pin: "Pinyin_8"},
+        {id: 9, eng: "English_9", han: "Hanzi_9", pin: "Pinyin_9"},
+        {id: 10, eng: "English_10", han: "Hanzi_10", pin: "Pinyin_10"},
       ],
       currentCard: {}
     }
@@ -33,7 +41,10 @@ class App extends Component {
   }
 
   updateCard(){
-    console.log("new card!");
+    const currentCards = this.state.cards;
+    this.setState({
+      currentCard: this.getRandomCard(currentCards)
+    })
   }
 
   render() {
