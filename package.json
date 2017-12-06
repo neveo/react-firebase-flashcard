@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@firebase/database": "^0.1.4",
+    "browser": "^0.2.6",
+    "browser-js": "^1.10.1",
+    "firebase": "^4.7.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17"
